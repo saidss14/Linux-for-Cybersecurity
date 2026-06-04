@@ -1,96 +1,114 @@
-Linux Fundamentals - Day 2
-Topic: File and Directory Management
+# Linux Fundamentals - Day 2  
+## Topic: File and Directory Management  
 
-In this section, we learn basic Linux file and directory management commands. These commands are essential for creating, organizing, copying, moving, and deleting files/folders in the Linux system. They form the foundation for daily terminal usage and cybersecurity work.
+In this section, we learn basic Linux file and directory management commands.  
+These commands are essential for creating, organizing, copying, moving, and deleting files/folders in the Linux system.  
+They form the foundation for daily terminal usage and cybersecurity work.  
 
-------------------------------------------------------------
+---
 
-1. mkdir (Make Directory)
+## 1. mkdir (Make Directory)
 Used to create directories (folders).
 
-Create a folder:
+### Create a folder:
+```bash
 mkdir notes
 mkdir projects
+```
 
-Create multiple folders:
+### Create multiple folders:
+```bash
 mkdir day1 day2 day3
+```
 
+---
 
-------------------------------------------------------------
-
-2. rmdir (Remove Directory)
+## 2. rmdir (Remove Directory)
 Used to delete EMPTY directories only.
 
-Example:
+### Example:
+```bash
 rmdir day3
+```
 
-Note:
-- If the folder contains files, rmdir will not work.
+### Note:
+- If the folder contains files, `rmdir` will not work.
 
+---
 
-------------------------------------------------------------
-
-3. touch
+## 3. touch
 Used to create empty files.
 
-Create single files:
+### Create single files:
+```bash
 touch notes.txt
 touch day2.txt
+```
 
-Create multiple files:
+### Create multiple files:
+```bash
 touch file1.txt file2.txt file3.txt
+```
 
+---
 
-------------------------------------------------------------
-
-4. cp (Copy)
+## 4. cp (Copy)
 Used to copy files and directories.
 
-Copy a file:
+### Copy a file:
+```bash
 cp notes.txt backup.txt
+```
 
-Copy a folder:
+### Copy a folder:
+```bash
 cp -r projects projects_backup
+```
 
-Note:
-- -r means recursive (required for folders)
+### Note:
+- `-r` means recursive (required for folders)
 
+---
 
-------------------------------------------------------------
-
-5. mv (Move / Rename)
+## 5. mv (Move / Rename)
 Used to move or rename files and folders.
 
-Rename a file:
+### Rename a file:
+```bash
 mv notes.txt linux_notes.txt
+```
 
-Move a file:
+### Move a file:
+```bash
 mv linux_notes.txt projects/
+```
 
+---
 
-------------------------------------------------------------
-
-6. rm (Remove)
+## 6. rm (Remove)
 Used to delete files and directories.
 
-Delete a file:
+### Delete a file:
+```bash
 rm file1.txt
+```
 
-Delete a folder:
+### Delete a folder:
+```bash
 rm -r projects_backup
+```
 
-Warning:
+### Warning:
 - Deleted files do NOT go to recycle bin
-- Be very careful with rm -r command
+- Be very careful with `rm -r`
 
+---
 
-------------------------------------------------------------
-
-Key Takeaways:
-- mkdir → create folders
-- rmdir → remove empty folders
-- touch → create files
-- cp → copy files/folders
-- mv → move or rename files/folders
-- rm → delete files/folders permanently
-- Always double-check before using rm -r
+## Key Takeaways:
+- `mkdir` → create folders  
+- `rmdir` → remove empty folders  
+- `touch` → create files  
+- `cp` → copy files/folders  
+- `mv` → move or rename files/folders  
+- `rm` → delete files/folders permanently  
+- Always double-check before using `rm -r`
